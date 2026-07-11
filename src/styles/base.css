@@ -1,0 +1,11 @@
+/*
+ * Precompiled stylesheet for consumers who don't use Tailwind:
+ *   import 'react-rrule-form/styles.css';
+ * Tailwind users skip this file and let their build scan the package instead:
+ *   @source "../node_modules/react-rrule-form";
+ */
+@import 'tailwindcss/theme.css' theme(reference);
+@import 'tailwindcss/utilities.css';
+@custom-variant dark (&:where(.dark, .dark *));
+@source "../components";
+@source "../theme.ts";
