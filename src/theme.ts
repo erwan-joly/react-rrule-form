@@ -69,8 +69,10 @@ export const defaultClassNames: RRuleFormClassNames = {
   radioGroup: 'flex flex-col gap-2',
   radioOption: 'flex flex-wrap items-center gap-2',
   radioInput: 'h-4 w-4 accent-zinc-900 dark:accent-zinc-100',
+  // `block` is load-bearing: the summary renders as <output>, which is inline by
+  // default, so its padded box overlaps whatever sits above it.
   summary:
-    'rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2 text-zinc-700 ' +
+    'block rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2 text-zinc-700 ' +
     'dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300',
   preview: 'flex flex-col gap-1.5',
   previewTitle: 'text-xs font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400',
