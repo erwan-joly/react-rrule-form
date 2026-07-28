@@ -1,6 +1,6 @@
 {
   "name": "react-rrule-form",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A recurrence-rule (RFC 5545 RRULE) form component for React. Tailwind-styled by default, restylable down to every element, zero runtime dependencies.",
   "keywords": [
     "react",
