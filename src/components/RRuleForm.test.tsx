@@ -92,4 +92,12 @@ describe('RRuleForm', () => {
     expect(container.firstElementChild).toHaveClass('my-extra');
     expect(container.firstElementChild).toHaveClass('max-w-md');
   });
+
+  // <output> is inline by default, so without an explicit display the summary's
+  // padded box overlaps whatever sits above it.
+  it('lays the summary out as a block', () => {
+    const { container } = render(<RRuleForm dtstart={dtstart} locale="en-US" />);
+
+    expect(container.querySelector('output')).toHaveClass('block');
+  });
 });
